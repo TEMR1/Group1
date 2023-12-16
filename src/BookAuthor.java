@@ -2,11 +2,11 @@
 
 import java.util.Random;
 
-public class BookAuthor {
-    String Author;
-    String Book;
+class BookAuthor {
+    private String Author;
+    private String Book;
 
-    // тут завжди на першому місці автор книжки а дальше його книжки
+// тут завжди на першому місці автор книжки а дальше його книжки
     // двохвимірний масив
 
     String [][] books = {{"Джордж Р. Р. Мартін",   "Гра престолів", "Битва королів", "Буря мечів"},
@@ -28,5 +28,15 @@ public class BookAuthor {
         Book = randomBook;
 
         return this; // повертає автора і його книжку
+    }
+
+//--------------------------------------------GETTERS-----------------------------------------------
+
+    public String getAuthor() {
+        return Author;
+    }
+
+    public String getBook() {
+        return Book;
     }
 }
