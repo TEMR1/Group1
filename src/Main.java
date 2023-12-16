@@ -4,8 +4,8 @@ public class Main {
         BookWishList bookWishList = new BookWishList();
 
         BookAuthor author1 = bookAuthor.Randomizer();
-        bookWishList.addBookToWishList(author1.Author, author1.Book);
+        bookWishList.addBookToWishList(author1.getAuthor(), author1.getBook());
         BookAuthor author2 = bookAuthor.Randomizer();
-        bookWishList.removeBookFromWishList(author2.Author, author2.Book);
+        bookWishList.removeBookFromWishList(author2.getAuthor(), author2.getBook());
     }
 }
